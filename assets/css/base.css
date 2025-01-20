@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+}
+h1,h2,h3{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 5.1rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.5px;
+}
+h2{
+    font-size: 4.2rem;
+    line-height: 5.438rem;
+    letter-spacing: 0.5px;
+}
+h3{
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+h4{  
+    font-size: 1.5rem;
+    line-height: 2.356rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+h5{
+    font-size: 1rem;
+    color: #BBAA95;
+}
+h6{
+    font-size: 1.125rem;
+    color: #BBAA95;
+}
+p{
+    font-size: 1.1rem;
+    color: #BBAA95;
+    font-weight: 400;
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 3.75rem;
+        line-height: 65px;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+}
+@media (max-width: 576px){
+    h1{
+        font-size: 3.15rem;
+        line-height: 58px;
+    }
+    h4{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    li{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+}
+@media (max-width: 384px){
+    h1{
+        font-size: 2.6rem;
+        line-height: 48px;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 320px){
+    h1{
+        font-size: 2.4rem;
+        line-height: 48px;
+    }
+    h5{
+        font-size: 14px;
+    }
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #59CAF6;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+span{
+    color: #59CAF6;
+}
+.btn-pri {
+    padding: 15px 20px;
+    background-color: #BBAA95;
+    color: #35363A;
+    border-radius: 20px;
+    width: 174px;
+    font-weight: 600;
+    border: none;
+    outline: none; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.btn-pri:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 3px solid #BBAA95;
+}
+.btn-pri:focus, .btn-pri:active {
+    outline: none; 
+    color: #35363A;
+    background-color: #BBAA95; 
+    border: none;
+}
+
+@media (max-width: 576px){
+    .btn-pri{
+        width: 155px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000; /* Ensures the navbar is on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional, adds shadow for visibility */
+}
+body {
+    padding-top: 80px;
+} 
+.navbar{
+    background-color: #F0F1F2;
+    color: #35363A;
+    font-weight: 500;
+}
+.navbar .nav-link:hover{
+    color: #59CAF6;
+}
+.banner-main{
+    background-image: url('../img/banner.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: 67%;
+    height: 90vh;
+}
+.footer-main{
+    background-image: url('../img/footer.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    padding-top: 95px;
+    padding-bottom: 40px;
+}
+.footer-main ul{
+    list-style-type: none;
+    padding: 0%;
+    font-weight: 500;
+}
+.footer-icons a,
+.footer-icons a:hover{
+    color: #000;
+}
+.footer-icons li{
+    background-color: #BBAA95;
+    border-radius: 50%;
+    color: #000;
+    margin: 10px;
+    padding: 8px 7px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.footer-icons li:hover {
+    background-color: #59CAF6; /* Change background color on hover */
+    transform: scale(1.2); /* Increase size by 20% */
+}
+.footer-col li:hover{
+    color: #BBAA95;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .footer-col ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-col li{
+        padding: 5px 0px;
+    }
+    .footer-main p{
+        font-size: 16px;
+    }
+}
+.padding-90{
+    padding: 90px 0px;
+}
+/* ==========gallery======== */
+
+
+.owl-theme .owl-nav{
+    margin-top: 40px !important;
+}
+button.owl-next span,
+button.owl-prev span{
+    margin-top: 30px;
+    font-size: 56px;
+    color: #BBAA95;
+    font-weight: 600;
+}
+    .plan-card {
+      background-color: #1d1d1d;
+      padding: 1.5rem;
+      min-height: 600px; /* Set a minimum height for the cards */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+    }     
+span.brown{
+    color: #BBAA95;
+}
+.plan-card.selected {
+    transform: scale(1.1); /* Expand the box on hover or if selected */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    border: 5px solid #BBAA95; /* Highlight border */
+    background-color: #0D0D0D!important;
+}
+.color-light{
+    color: #fff;
+}
+.color-brown{
+    color: #BBAA95;
+}
+.color-blue{
+    color: #59CAF6;
+}
+h4.price-indi{
+    font-size: 54px;
+}
+@media(max-width: 576px){
+    h4.price-indi{
+        font-size: 45px;
+    }
+}
+/* ============benefits=============== */
+.benefits {
+    background-image: url('../img/benefits-background.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    
+}
+
+.benefits-logo{
+    border-radius: 20px;
+}
+.benefit-model{
+    max-height: 800px;
+}
+@media(max-width: 568px){
+    .benefit-model{
+        max-height: 350px;
+    }
+}
+.services{
+    position: relative;
+    background-color: #1C1C1C;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 65% 93%, 60% 100%, 0 100%);
+}
+.services .owl-theme .owl-nav{
+    margin-top: 10px !important;
+}
+.services-image{
+    width: 80px !important;
+    border-radius: 20px;
+}
+.circle{
+    position: absolute;
+}
+.circle{
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+}
